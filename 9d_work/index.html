@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <form id="numGame">
+        <h1>Random Number Game</h1>
+        <h3>
+            Generate a number between 0 and
+            <input id="endNum" required type="number" min="0">
+        </h3>
+            Guess the number :
+            <input id="guessNum" type="number" min="0">
+            <input type="submit" value="play!">
+    </form>
+    <form class="hidden" id="gameResult">
+        <span id="choseNum"></span><br>
+        <span id ="winOrLose"></span>
+    </form>
+</body>
+<script src="app.js"></script>
+</html>
